@@ -1,0 +1,165 @@
+ /* >>>>>>>>> CSS Rest <<<<<<<< */
+                 
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    user-select: none;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+html{
+    font-size: 62.5%;
+}
+
+ /* >>>>>>>>> Remove List Style <<<<<<<< */
+
+ul, ol {
+  list-style: none;
+}
+
+/* Remove default hyperlink styles */
+
+a {
+  text-decoration: none;
+color: inherit;
+}
+
+/* Add a default cursor for clickable elements */
+
+a, button, input {
+  cursor: pointer;
+}
+
+ /* >>>>>>>>> Variable for colors <<<<<<<< */
+
+:root{
+   --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --background-color: #f8f9fa;
+  --text-color: #333;
+
+}
+
+ /* >>>>>>>>> CSS for main page <<<<<<<< */
+
+ main{
+     width: 100%;
+     height: 100vh;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background-color: var(--text-color);
+     transition: ease all 1s;
+ }
+ .container{
+     width: 70%;
+     /* height: 20rem; */
+     background-color: white;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     border-radius: 1rem;
+     padding: 10px 10px;
+     position: relative;
+     border: 3px solid black;
+ }
+ .heading{
+     font-size: 3rem;
+     font-weight: 700;
+     color: black;
+     text-transform: uppercase;
+     text-align: center;
+ }
+ .color-code{
+     font-size: 2.5rem;
+     font-weight: 600;
+     margin: 5px 0px;
+ }
+ .btn{
+     font-size: 1.8rem;
+     font-weight: 700;
+     color: white;
+     background-color: black;
+     padding: 15px 20px;
+     margin: 15px 0px;
+     /* border: 0; */
+     outline: 0;
+     border-radius: 100px;
+     transition: ease all 0.5s;
+     text-transform: uppercase;
+ }
+ .btn:hover{
+     background-color: transparent;
+     color: black;
+     border: 2px solid black;
+     
+ }
+ .btn:active{
+     transform: scale(0.89);
+ }
+
+span{
+    margin-left: 8px;
+}
+.copy-btn{
+    font-size: 1.5rem;
+     font-weight: 800;
+     color: white;
+     background-color: black;
+     padding: 10px 10px;
+     margin: 30px 30px;
+     /* border: 0; */
+     outline: 0;
+     border-radius: 0.5rem;
+     transition: ease all 0.5s;
+     text-transform: uppercase;
+     position: absolute;
+     top: 0%;
+     left: 0%;
+     box-shadow: 8px 8px 20px black;
+}
+
+.copy-btn:hover{
+    background-color: transparent;
+    color: black;
+    border: 2px solid black;
+    
+}
+.copy-btn:active{
+    transform: scale(0.89);
+}
+h3{
+    position: absolute;
+     top: 100px;
+     left: 0%;
+     background-color: black;
+     color: white;
+     width: 300px;
+     text-align: center;
+     font-size: 1.7rem;
+     padding: 10px 0px;
+     display: none;
+     border-radius: 9px;
+     margin: 0px 50px;
+     text-align: center;
+     box-shadow: 8px 8px 20px black;
+    user-select: none;
+    transition: ease all 1s;
+
+}
+@media (max-width: 400px) {
+    html{
+        font-size: 40%;
+    }
+    .container{
+        width: 95%;
+    }
+    
+}
